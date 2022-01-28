@@ -1,0 +1,80 @@
+body {
+	background-color: #000000;
+}
+
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  filter: brightness(.2);
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.enable_music {
+    color: #e7e7e7;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    font-weight: 400;
+
+    margin: 50px auto;
+    animation: music 3s;
+}
+
+img {
+  width: 420px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loadbar {
+    width: 100%;
+    background-color: #000000;
+    height: 20px;
+
+    margin-left: 2px;
+    margin-right: 3px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+
+.progressBar {
+    width: 10%;
+    background-color: #f1c40f;
+    height: 20px;
+
+    position: absolute;
+    left: 10%;
+}
