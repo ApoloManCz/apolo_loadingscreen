@@ -1,8 +1,6 @@
 fx_version 'cerulean'
 games { 'gta5' }
 
-author 'Judd#7644'
-description 'Night Owls Roleplay Loading'
 version '1.0.0'
 
 loadscreen 'html/index.html'
