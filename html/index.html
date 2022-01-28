@@ -1,0 +1,55 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- BACKGROUND VIDEO -->
+<div id="overlay">
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="assets/bgvideo.mp4" type="video/mp4">
+    </video>
+</div>
+</div>
+<!-- END BG VIDEO -->
+<!-- LOGO -->
+<img src="assets/logo.png" alt="" />
+<!-- END LOGO -->
+<h1 class="enable_music">Press <strong>SPACEBAR</strong> to turn off music</h1>
+    <audio id="leson" src="assets/music.mp3" autoplay="true" hidden="true" loop="true"/>
+    <script>
+
+    var play = false;
+    var myAudio = document.getElementById("leson");
+    
+    myAudio.volume = 0.1;
+
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar                    
+                    if (play) {
+                        myAudio.pause();
+                        play = false;
+                    } else {
+                        myAudio.play();
+                        play = true;
+                    }
+                    break;
+            }
+      return false;
+    }
+
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+<!-- BG AUDIO -->
+<!-- END BG AUDIO -->
+<!-- LOADING BAR -->
+<div class="loadbar"> 
+        <div class="progressBar"></div>
+    </div>
+    <script src="js/main.js"></script>
+<!-- END LOADING BAR -->
+</body>
+</html>
